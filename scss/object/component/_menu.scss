@@ -1,0 +1,31 @@
+.c-menu{
+    background: #F2EDE9;
+
+.c-menu__title{
+    font-family: "ROBOTO", "Hiragino kaku Gothic ProN", Meiriyo, Verdana, arial, helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: $color--gray;
+    line-height: 39.84px;
+    margin-bottom: 90px;
+}
+}
+.c-menu__list{
+        font-weight: 700;
+        font-size: 2.4rem;
+        margin-bottom: 32px;
+        color: $color--gray;
+}
+
+.c-menu__subListBox{
+            margin-bottom: 48px;
+            .c-menu__subList{
+                font-size: 2.0rem;
+                line-height: 29.7px;
+                color: $color--gray;
+                margin-bottom: 20px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+}
