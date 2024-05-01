@@ -1,0 +1,6 @@
+@use "../../global" as g;
+
+.p-sidebar{
+    display: flex;
+    background: g.$color--nav-gray;
+}

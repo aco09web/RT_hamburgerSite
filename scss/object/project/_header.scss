@@ -1,8 +1,10 @@
+@use "../../global" as g;
 .p-header{
     display: flex;
-    height: 217px;
+    height: 11.30vw;
     align-items: center;
-    margin-left: 65px;
+    padding-left: 3.38vw;
+    padding-right: 1.61vw;
     justify-content: space-between;
-    margin-right: 31px;
+    background-color: g.$color--background-pink;
 }

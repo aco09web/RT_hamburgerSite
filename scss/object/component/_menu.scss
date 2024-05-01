@@ -1,29 +1,31 @@
-.c-menu{
-    background: #F2EDE9;
+@use "../../global" as g;
 
+.c-menu{
+    padding: 4.375vw 0 4.375vw 2.395vw;
 .c-menu__title{
     font-family: "ROBOTO", "Hiragino kaku Gothic ProN", Meiriyo, Verdana, arial, helvetica, sans-serif;
     font-weight: 700;
-    font-size: 3.4rem;
-    color: $color--gray;
-    line-height: 39.84px;
-    margin-bottom: 90px;
+    font-size: 1.770vw;
+    color: g.$color--gray;
+    line-height: 2.022vw;
+    margin-bottom: 4.687vw;
 }
 }
 .c-menu__list{
         font-weight: 700;
-        font-size: 2.4rem;
-        margin-bottom: 32px;
-        color: $color--gray;
+        font-size: 1.25vw;
+        margin-bottom: 1.666vw;
+        color: g.$color--gray;
 }
 
 .c-menu__subListBox{
-            margin-bottom: 48px;
+            margin-bottom: 2.5vw;
+            padding-left: 1.041vw;
             .c-menu__subList{
-                font-size: 2.0rem;
-                line-height: 29.7px;
-                color: $color--gray;
-                margin-bottom: 20px;
+                font-size: 1.041vw;
+                line-height: 1.546vw;
+                color: g.$color--gray;
+                margin-bottom: 1.041vw;
                 &:last-child{
                     margin-bottom: 0;
                 }

@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/**
-* Foundation
-* ========================== */
 /* resset.dev • v5.0.2 */
 /* # =================================================================
    # Global selectors
@@ -281,16 +278,39 @@ progress {
 }
 
 html {
-  font-size: 62.5%; /*ベースを16pxから10pxにする*/
+  font-size: 62.5%;
+  /*font-size: 3.125vw;*/
+  /*
+    計算式：　10(px) / 320(px) * 100 = 3.125
+    画面幅320pxの時に "font-size: 10px" 相当になる
+  */
+  /*
+    font-size: calc(100vw * 16 / 375);
+
+  @include bp.breakpoint(tablet){
+      // viewport 768px のとき font-size 16px
+      font-size: calc(100vw * 16 / 768);
+    }
+
+  @include bp.breakpoint(pc){
+      // viewport 1240px のとき font-size 18px
+      font-size: calc(100vw * 18 / 1240);
+    }
+
+  @include bp.breakpoint(big-pc){
+      // viewport 1440px のとき font-size 10px
+      font-size: calc(100vw * 10 / 1440);
+    }
+    */
 }
 
 body {
-  min-width: 320px;
+  min-width: 375px;
   width: 100%;
   margin: 0;
-  background: rgb(255, 247, 239);
+  background: rgb(255, 255, 255);
   font-size: 1.6rem;
-  font-family: "M PLUS 1", "Roboto", "Hiragino kaku Gothic ProN", Meiriyo, Verdana, arial, helvetica, sans-serif;
+  font-family: "M PLUS 1p", "Roboto", sans-serif;
   color: #000;
   line-height: 1.7;
 }
@@ -317,16 +337,73 @@ a {
   text-decoration: none;
 }
 
-/**
-* Layout
-* ========================== */
+.l-container {
+  width: 80.88%;
+}
+
+.l-footer {
+  width: auto;
+}
+
 .l-header {
   width: auto;
 }
 
-/* Object
-* ========================== */
-/* Component ------------ */
+.l-main {
+  width: auto;
+}
+
+.l-sidebar {
+  width: 19.11%;
+  background: rgb(242, 237, 233);
+}
+
+.l-wrapper {
+  display: flex;
+}
+
+/*
+デザインカンプ
+全体の高さ　2993px
+全体の幅　1920px
+*/
+.c-menu {
+  padding: 4.375vw 0 4.375vw 2.395vw;
+}
+.c-menu .c-menu__title {
+  font-family: "ROBOTO", "Hiragino kaku Gothic ProN", Meiriyo, Verdana, arial, helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.77vw;
+  color: rgb(112, 112, 112);
+  line-height: 2.022vw;
+  margin-bottom: 4.687vw;
+}
+
+.c-menu__list {
+  font-weight: 700;
+  font-size: 1.25vw;
+  margin-bottom: 1.666vw;
+  color: rgb(112, 112, 112);
+}
+
+.c-menu__subListBox {
+  margin-bottom: 2.5vw;
+  padding-left: 1.041vw;
+}
+.c-menu__subListBox .c-menu__subList {
+  font-size: 1.041vw;
+  line-height: 1.546vw;
+  color: rgb(112, 112, 112);
+  margin-bottom: 1.041vw;
+}
+.c-menu__subListBox .c-menu__subList:last-child {
+  margin-bottom: 0;
+}
+
+.test {
+  display: block;
+}
+
 .c-header__label {
   display: none;
 }
@@ -334,94 +411,67 @@ a {
 .c-searchBox {
   border: solid 1px rgb(112, 112, 112);
   border-radius: 10px;
-  width: 396px;
-  height: 46px;
+  width: 20.625vw;
+  height: 2.4vw;
   position: relative;
+  margin-right: 0.72vw;
+  background-color: rgb(255, 255, 255);
 }
 .c-searchBox::before {
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 1.25vw;
+  height: 1.25vw;
   background: url(../images/search-icon.png) no-repeat center center/auto 100%;
   display: inline-block;
   position: absolute;
-  top: 11px;
-  left: 12px;
+  top: 0.572vw;
+  left: 0.625vw;
 }
 .c-searchBox input {
-  padding: 10px 0 10px 45px;
-  width: 396px;
-  height: 46px;
+  padding: 0.52vw 0 0.52vw 2.34vw;
+  width: 20.62vw;
+  height: 2.39vw;
+}
+
+.c-header__form {
+  display: flex;
 }
 
 .c-button--submit .c-button--submit__text {
   color: rgb(112, 112, 112);
   font-weight: 700;
-  width: 136px;
-  height: 46px;
+  width: 7.083vw;
+  height: 2.395vw;
   background: linear-gradient(to bottom, #f2ede9 0%, #ded8d3 100%);
   border: 1px solid #707070;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.833vw;
 }
 
 .c-header__logo {
-  font-family: "ROBOTO", "Hiragino kaku Gothic ProN", Meiriyo, Verdana, arial, helvetica, sans-serif;
+  font-family: "ROBOTO", sans-serif;
   font-weight: 700;
-  font-size: 6.4rem;
-  color: rgb(112, 112, 112);
-  line-height: 75px;
-}
-
-.c-menu {
-  background: #F2EDE9;
-}
-.c-menu .c-menu__title {
-  font-family: "ROBOTO", "Hiragino kaku Gothic ProN", Meiriyo, Verdana, arial, helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 3.4rem;
-  color: rgb(112, 112, 112);
-  line-height: 39.84px;
-  margin-bottom: 90px;
-}
-
-.c-menu__list {
-  font-weight: 700;
-  font-size: 2.4rem;
-  margin-bottom: 32px;
+  font-size: 3.33vw;
   color: rgb(112, 112, 112);
 }
 
-.c-menu__subListBox {
-  margin-bottom: 48px;
-}
-.c-menu__subListBox .c-menu__subList {
-  font-size: 2rem;
-  line-height: 29.7px;
-  color: rgb(112, 112, 112);
-  margin-bottom: 20px;
-}
-.c-menu__subListBox .c-menu__subList:last-child {
-  margin-bottom: 0;
-}
-
-/* Project ------------ */
 .p-footer {
   background: url(../images/footer-bg.png) center center/auto 100%;
-  height: 150px;
+  height: 7.812vw;
   color: rgb(255, 255, 255);
 }
 .p-footer .p-footer__listBox {
   display: flex;
   justify-content: center;
-  padding: 41px 0 31px;
+  padding: 2.135vw 0 1.614vw;
 }
 .p-footer .p-footer__listBox .p-footer__list {
-  font-size: 2rem;
-  line-height: 29.7px;
-  margin-left: 5px;
+  font-size: 1.041vw;
+  line-height: 1.546vw;
+  margin-left: 0.26vw;
 }
 .p-footer .p-footer__listBox .p-footer__list::after {
   content: " | ";
@@ -432,7 +482,118 @@ a {
 .p-footer .p-footer__copyright {
   display: flex;
   justify-content: center;
+  font-size: 0.729vw;
 }
 
-/* Utility ------------ */
+.p-header {
+  display: flex;
+  height: 11.3vw;
+  align-items: center;
+  padding-left: 3.38vw;
+  padding-right: 1.61vw;
+  justify-content: space-between;
+  background-color: rgb(255, 247, 239);
+}
+
+.p-access {
+  height: 33.802vw;
+  background-color: rgb(0, 0, 0);
+}
+.p-access .p-access__wrapper {
+  background: url(../images/map_01.png) no-repeat center center/auto 100%;
+}
+.p-access .p-access__contents {
+  background-color: rgba(0, 0, 0, 0.2855);
+  width: 61%;
+  padding: 4.479vw 6.979vw 3.906vw 6.197vw;
+  height: 33.802vw;
+}
+.p-access .p-access__contents .p-access__title {
+  font-size: 1.875vw;
+  font-weight: 700;
+  line-height: 1.71875vw;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5.677vw;
+  position: relative;
+}
+.p-access .p-access__contents .p-access__title::after {
+  content: "";
+  display: block;
+  height: 0.104vw;
+  background-color: rgb(255, 255, 255);
+  width: 3.906vw;
+  position: absolute;
+  top: 4.6875vw;
+}
+.p-access .p-access__contents .p-access__text {
+  font-size: 0.833vw;
+  font-weight: 700;
+  line-height: 1.718vw;
+  color: rgb(255, 255, 255);
+}
+
+.p-frontHero {
+  background: url(../images/hero_01.png) no-repeat center center/auto 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6.25vw;
+  height: 27.604vw;
+}
+.p-frontHero .p-frontHero__title {
+  padding: 0 4.479vw;
+  color: rgb(255, 255, 255);
+  font-size: 2.083vw;
+  font-weight: 700;
+}
+
+.p-contents {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5.833vw 6.77vw 6.197vw;
+}
+.p-contents .p-contents__list {
+  width: 32.135vw;
+  padding: 1.25vw 1.041vw 0.625vw;
+}
+.p-contents .p-contents__list .p-contents__title {
+  font-size: 4.166vw;
+  font-family: "ROBOTO";
+  color: rgb(255, 255, 255);
+  margin-bottom: 36.77vw;
+  position: relative;
+  line-height: 4.882vw;
+}
+.p-contents .p-contents__list .p-contents__title::after {
+  content: "";
+  display: block;
+  height: 0.208vw;
+  background-color: rgb(255, 255, 255);
+  width: 3.281vw;
+  position: absolute;
+  bottom: -2.239vw;
+}
+.p-contents .p-contents__list .p-contents__title--gray {
+  color: rgb(234, 234, 234);
+}
+.p-contents .p-contents__list .p-contents__text {
+  padding: 0.729vw 1.041vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.041vw;
+}
+.p-contents .p-contents__list .p-contents__text .p-contents__subTitle {
+  font-size: 1.25vw;
+  font-weight: 700;
+  margin-bottom: 0.9375vw;
+  line-height: 1.25vw;
+}
+.p-contents .p-contents__list .p-contents__text .p-contents__subText {
+  font-size: 0.833vw;
+  line-height: 1.2375vw;
+}
+.p-contents .p-contents__list__takeOut {
+  background: url(../images/takeOut.png) no-repeat center center/auto 100%;
+}
+.p-contents .p-contents__list__eatIn {
+  background: url(../images/eatIn.png) no-repeat center center/auto 100%;
+}
 /*# sourceMappingURL=style.css.map */

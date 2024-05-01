@@ -1,21 +1,4 @@
-/**
-* Foundation
-* ========================== */
-@import "foundation/_reset";
-@import "foundation/_mixin";
-@import "foundation/_base"; 
-/**
-* Layout
-* ========================== */
-@import "layout/header";
-/* Object
-* ========================== */
-/* Component ------------ */
-@import "object/component/search"; 
-@import "object/component/title"; 
-@import "object/component/menu";
-
-/* Project ------------ */
-@import "object/project/map"; 
-@import "object/project/footer";
-/* Utility ------------ */
+@use "foundation";
+@use "layout";
+@use "object/component";
+@use "object/project";

@@ -1,0 +1,38 @@
+@use "../../global" as g;
+
+.p-access{
+    height: 33.802vw;
+    background-color: rgba(0, 0, 0, 1);
+    .p-access__wrapper{
+    background: url(../images/map_01.png) no-repeat center center / auto 100%;
+    }
+    .p-access__contents{
+        background-color: rgba(0, 0, 0, 0.2855);
+        width: 61%;
+        padding: 4.479vw 6.979vw 3.906vw 6.197vw;
+        height: 33.802vw;
+        .p-access__title{
+            font-size: 1.875vw;
+            font-weight: 700;
+            line-height: 1.71875vw;
+            color: g.$color--white;
+            margin-bottom: 5.677vw;
+            position: relative;
+            &::after{
+                content: "";
+                display: block;
+                height: 0.104vw;
+                background-color: g.$color--white;
+                width: 3.906vw;
+                position: absolute;
+                top: 4.6875vw;
+            }
+        }
+        .p-access__text{
+            font-size: 0.833vw;
+            font-weight: 700;
+            line-height: 1.718vw;
+            color: g.$color--white;
+        }
+    }
+}

@@ -1,6 +1,8 @@
+@use "../../global" as g;
+
 .c-header__logo{
-    font-family: "ROBOTO", "Hiragino kaku Gothic ProN", Meiriyo, Verdana, arial, helvetica, sans-serif;
+    font-family: "ROBOTO", sans-serif;
     font-weight: 700;
-    font-size: 6.4rem;
-    color: $color--gray;
+    font-size: 3.33vw;
+    color: g.$color--gray;
 }

@@ -1,25 +1,46 @@
-//variables
-$color--black:#000;
-$color--gray:rgba(112, 112, 112, 1);
-$color--brown:rgba(60, 42, 16, 1);
-$color--white:rgba(255, 255, 255, 1);
-$color--background:rgba(255, 247, 239, 1);
-$color--theme-blue:#2498B3;
+@use "../global" as g;
+@use "sass:math";
+@use "../global/mixin/breakpoint" as bp;
+
 
 
 //base
 html {
-		font-size: 62.5%;/*ベースを16pxから10pxにする*/
+	font-size: 62.5%;
+    /*font-size: 3.125vw;*/
+    /*
+      計算式：　10(px) / 320(px) * 100 = 3.125
+      画面幅320pxの時に "font-size: 10px" 相当になる
+    */
+	// viewport 375px のとき font-size 16px
+	/*
+  font-size: calc(100vw * 16 / 375);
+  
+@include bp.breakpoint(tablet){
+    // viewport 768px のとき font-size 16px
+    font-size: calc(100vw * 16 / 768);
+  }
+  
+@include bp.breakpoint(pc){
+    // viewport 1240px のとき font-size 18px
+    font-size: calc(100vw * 18 / 1240);
+  }
+  
+@include bp.breakpoint(big-pc){
+    // viewport 1440px のとき font-size 10px
+    font-size: calc(100vw * 10 / 1440);
+  }
+  */
 }
 
 body {
-		min-width: 320px;   
+		min-width: 375px;   
 		width: 100%;
 		margin: 0;
-		background: $color--background;
+		background: g.$color--background-white;
 		font-size: 1.6rem;
-        font-family: "M PLUS 1","Roboto", "Hiragino kaku Gothic ProN", Meiriyo, Verdana, arial, helvetica, sans-serif;
-		color: $color--black;
+        font-family: "M PLUS 1p","Roboto", sans-serif;
+		color: g.$color--black;
 		line-height: 1.7;
 }
 
