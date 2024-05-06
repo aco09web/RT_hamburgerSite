@@ -1,6 +1,10 @@
 @use "../global" as g;
 
 .l-sidebar{
-    width: 19.11%;
-    background: g.$color--nav-gray;
+    display: none;
+    @include g.breakpoint(pc){
+        display: block;
+        width: 19.11%;
+        background: g.$color--nav-gray;
+    }
 }

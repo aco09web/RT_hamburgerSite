@@ -1,38 +1,87 @@
 @use "../../global" as g;
 
 .p-access{
-    height: 33.802vw;
     background-color: rgba(0, 0, 0, 1);
-    .p-access__wrapper{
-    background: url(../images/map_01.png) no-repeat center center / auto 100%;
+    height: auto;
+    @include g.breakpoint(pc){
+        min-height: 33.802vw;
     }
-    .p-access__contents{
+}
+.p-access__contents{
+    width: auto;
+    padding: 42px 40px;
+    &::before{
+        content: "";
+        height: 60%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.2855);
+        z-index: 10;
+        @include g.breakpoint(tablet){
+            height: 100%;
+        }
+        @include g.breakpoint(pc){
+            display: none;
+        }
+    }
+    @include g.breakpoint(pc){
         background-color: rgba(0, 0, 0, 0.2855);
         width: 61%;
         padding: 4.479vw 6.979vw 3.906vw 6.197vw;
-        height: 33.802vw;
-        .p-access__title{
-            font-size: 1.875vw;
-            font-weight: 700;
-            line-height: 1.71875vw;
-            color: g.$color--white;
-            margin-bottom: 5.677vw;
-            position: relative;
-            &::after{
-                content: "";
-                display: block;
-                height: 0.104vw;
-                background-color: g.$color--white;
-                width: 3.906vw;
-                position: absolute;
-                top: 4.6875vw;
-            }
+        min-height: 33.802vw;
+    }
+}
+.p-access__wrapper{
+    min-height: 691px;
+    background: url(../images/map-sp_01.webp) no-repeat center center / cover;
+    position: relative;
+    @include g.breakpoint(tablet){
+        min-height: 415px;
+        background: url(../images/map-tablet_01.webp) no-repeat center center / cover;
+    }
+    @include g.breakpoint(pc){
+        background: url(../images/map_01.webp) no-repeat center center / auto 100%;
+        min-height: auto;
+    }
+}
+.p-access__title{
+    font-size: 3.0rem;
+    line-height: 44.55px;
+    color: g.$color--white;
+    margin-bottom: 29px;
+    position: relative;
+    z-index: 20;
+    @include g.breakpoint(pc){
+        font-size: 1.875vw;
+        line-height: 1.71875vw;
+        margin-bottom: 5.677vw;
+    }
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: g.$color--white;
+        width: 75px;
+        position: absolute;
+        top: 60px;
+        @include g.breakpoint(pc){
+            height: 0.104vw;
+            width: 3.906vw;
+            top: 4.6875vw;
         }
-        .p-access__text{
-            font-size: 0.833vw;
-            font-weight: 700;
-            line-height: 1.718vw;
-            color: g.$color--white;
-        }
+    }
+}
+.p-access__text{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 33px;
+    color: g.$color--white;
+    position: relative;
+    z-index: 20;
+    @include g.breakpoint(pc){
+        font-size: 0.833vw;
+        line-height: 1.718vw;
     }
 }

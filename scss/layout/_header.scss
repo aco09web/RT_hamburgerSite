@@ -1,3 +1,9 @@
+@use "../global" as g;
+
 .l-header{ 
     width: auto;
+    height: 215px;
+    @include g.breakpoint(pc){
+        height: 11.30vw;
+    }
 }
