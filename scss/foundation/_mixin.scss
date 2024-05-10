@@ -10,10 +10,6 @@
 			@content ;
 		}
 	}
-    @if $point==big-pc{
-		@media (min-width: 1440px) {
-			@content ;
-		}
-	}
+
 
 }

@@ -1,6 +1,5 @@
-@use "../../global" as g;
+@use "../../foundation/global" as g;
 
 .p-sidebar{
     display: flex;
-    background: g.$color--nav-gray;
 }

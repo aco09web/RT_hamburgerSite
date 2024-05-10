@@ -1,30 +1,27 @@
-@use "../../global" as g;
+@use "../../foundation/global" as g;
 
-.c-menu{
+.p-menu{
     padding: 4.375vw 0 4.375vw 2.395vw;
 }
-.c-menu__title{
+.p-menu__title{
     font-family: g.$font-title;
     font-size: 1.770vw;
-    color: g.$color--gray;
     line-height: 2.022vw;
     margin-bottom: 4.687vw;
 }
-.c-menu__list{
+.p-menu__list{
         font-size: 1.25vw;
         margin-bottom: 1.666vw;
-        color: g.$color--gray;
         display: inline-block;
 }
 
-.c-menu__subListBox{
+.p-menu__subListBox{
             margin-bottom: 2.5vw;
             padding-left: 1.041vw;
 }
-.c-menu__subList{
+.p-menu__subList{
     font-size: 1.041vw;
     line-height: 1.546vw;
-    color: g.$color--gray;
     margin-bottom: 1.041vw;
     &:last-child{
         margin-bottom: 0;

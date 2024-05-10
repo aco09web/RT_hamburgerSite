@@ -1,36 +1,12 @@
-@use "../global" as g;
+@use "../foundation/global" as g;
 @use "sass:math";
-@use "../global/mixin/breakpoint" as bp;
+
 
 
 
 //base
 html {
 	font-size: 62.5%;
-    /*font-size: 3.125vw;*/
-    /*
-      計算式：　10(px) / 320(px) * 100 = 3.125
-      画面幅320pxの時に "font-size: 10px" 相当になる
-    */
-	// viewport 375px のとき font-size 16px
-	/*
-  font-size: calc(100vw * 16 / 375);
-  
-@include bp.breakpoint(tablet){
-    // viewport 768px のとき font-size 16px
-    font-size: calc(100vw * 16 / 768);
-  }
-  
-@include bp.breakpoint(pc){
-    // viewport 1240px のとき font-size 18px
-    font-size: calc(100vw * 18 / 1240);
-  }
-  
-@include bp.breakpoint(big-pc){
-    // viewport 1440px のとき font-size 10px
-    font-size: calc(100vw * 10 / 1440);
-  }
-  */
 }
 
 body {

@@ -1,7 +1,6 @@
-@use "../../global" as g;
+@use "../../foundation/global" as g;
 .p-header{
     text-align: center;
-    background-color: g.$color--background-pink;
     position: relative;
     @include g.breakpoint(pc){
     display: flex;
