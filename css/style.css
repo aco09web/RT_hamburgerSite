@@ -350,6 +350,15 @@ a {
   }
 }
 
+.c-container {
+  width: 100%;
+}
+@media (min-width: 1200.8px) {
+  .c-container {
+    width: 80.88%;
+  }
+}
+
 .c-title--logo {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
@@ -504,15 +513,6 @@ a {
 
 .c-text--bold {
   font-weight: 700;
-}
-
-.p-container {
-  width: 100%;
-}
-@media (min-width: 1200.8px) {
-  .p-container {
-    width: 80.88%;
-  }
 }
 
 .p-footer {
