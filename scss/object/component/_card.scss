@@ -1,0 +1,106 @@
+@use "../../foundation/global" as g;
+
+.c-card{
+    width: 100%;
+    background-color: g.$color--card-brown;
+    margin-bottom: 20px;
+
+    @include g.breakpoint(pc){
+        width: 100%;
+    }
+}
+@include g.breakpoint(tablet){
+    .c-card__body:has(.c-card__image--container) {
+    display: flex;
+    justify-content: center;
+    }
+}
+
+.c-card__image--container{
+    position: relative;
+}
+@include g.breakpoint(tablet){
+    .c-card__body:has(.c-card__image--container) .c-card__image--container {
+    width: 50%;
+    }
+}
+.c-card__image{
+    aspect-ratio: 677 / 471;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    @include g.breakpoint(tablet){
+    }
+}
+.c-card__text--body{
+    padding: 32px 17px 44px;
+    @include g.breakpoint(tablet){
+        width: 100%;
+        padding: 31px 35px 40px;
+    }
+    @include g.breakpoint(pc){
+        padding: 2.91vw 3.28vw 3.125vw;
+    }
+}
+@include g.breakpoint(tablet){
+    .c-card__body:has(.c-card__image--container) .c-card__text--body {
+        width: 50%;
+    }
+}
+.c-card__title{
+    font-size: 2.0rem;
+    line-height: 1.485;
+    margin-bottom: 20px;
+    @include g.breakpoint(pc){
+        font-size: 1.875vw;
+        line-height: 2.78vw;
+        margin-bottom: 2.34vw;
+    }
+}
+.c-card__subtitle{
+    font-size: 1.6rem;
+    line-height: 1.485;
+    margin-bottom: 7px;
+    @include g.breakpoint(pc){
+        font-size: 1.25vw;
+        line-height: 1.85vw;
+        margin-bottom: 0.67vw;
+    }
+}
+.c-card__text{
+    font-size: 1.6rem;
+    line-height: 1.485;
+    margin-bottom: 40px;
+    @include g.breakpoint(tablet){
+        margin-bottom: 45px;
+    }
+    @include g.breakpoint(pc){
+        font-size: 0.83vw;
+        line-height: 1.23vw;
+        margin-bottom: 3.125vw;
+    }
+}
+.c-card__link--container{
+    display: flex;
+    justify-content: center;
+}
+.c-card__link{
+    width: 163px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    line-height: 1.063;
+    color: g.$color--text-gray-primary;
+    background-color: g.$color--white;
+    border-radius: 20px;
+    padding-bottom: 1px;
+    @include g.breakpoint(pc){
+        width: 15.20vw;
+        height: 3.95vw;
+        font-size: 0.83vw;
+        line-height: 1.71vw;
+        border-radius: 2.08vw;
+    }
+}

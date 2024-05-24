@@ -48,7 +48,7 @@
 }
 .p-access__title{
     font-size: 3.0rem;
-    line-height: 44.55px;
+    line-height: 1.485;
     margin-bottom: 29px;
     position: relative;
     z-index: 20;
@@ -75,7 +75,7 @@
 .p-access__text{
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 33px;
+    line-height: 2.357;
     position: relative;
     z-index: 20;
     @include g.breakpoint(pc){

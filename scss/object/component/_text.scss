@@ -11,3 +11,21 @@
 .c-text--bold{
     font-weight: 700;
 }
+.c-text-size--primary{
+    font-size: 1.6rem;
+    line-height: 1.485;
+    @include g.breakpoint(tablet){
+        font-size: 1.6rem;
+    }
+    @include g.breakpoint(pc){
+        font-size: 0.83vw;
+        line-height: 1.24vw;
+    }
+}
+.c-text-size--secondary{
+    font-size: 1.4rem;
+    line-height: 1.485;
+}
+.c-text-font--primary{
+    font-family: g.$font-main;
+}

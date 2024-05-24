@@ -1,0 +1,19 @@
+@use "../../foundation/global" as g;
+.c-pre{
+    background-color: g.$color--background-skyblue;
+    font-family: g.$font-main;
+    color: g.$color--brown;
+    font-size: 1.6rem;
+    line-height: 1.485;
+    margin-bottom: 30px;
+    padding: 50px;
+    @include g.breakpoint(tablet){
+        margin-bottom: 60px;
+    }
+    @include g.breakpoint(pc){
+        font-size: 0.83vw;
+        line-height: 1.24vw;
+        padding: 2.6vw;
+        margin-bottom: 2.6vw;
+    }
+}
