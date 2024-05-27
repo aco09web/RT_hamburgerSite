@@ -1,5 +1,5 @@
 @use "../../foundation/global" as g;
-.c-blockquote{
+.p-blockquote{
     padding: 30px 20px;
     margin-bottom: 30px;
     @include g.breakpoint(tablet){
@@ -11,7 +11,7 @@
         margin-bottom: 3.13vw;
     }
 }
-.c-blockquote__text{
+.p-blockquote__text{
     color: g.$color--brown;
     font-size: 1.6rem;
     line-height: 1.485;
@@ -25,7 +25,7 @@
         margin-bottom: 3.18vw;
     }
 }
-.c-blockquote__source{
+.p-blockquote__source{
     font-size: 1.6rem;
     line-height: 1.485;
     font-style: normal;
@@ -34,7 +34,7 @@
         line-height: 1.24vw;
     }
 }
-.c-blockquote__link{
+.p-blockquote__link{
     text-decoration: underline;
     color: g.$color--text-link;
     font-size: 1.6rem;

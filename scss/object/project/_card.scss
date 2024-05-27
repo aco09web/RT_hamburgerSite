@@ -1,6 +1,6 @@
 @use "../../foundation/global" as g;
 
-.c-card{
+.p-card{
     width: 100%;
     background-color: g.$color--card-brown;
     margin-bottom: 20px;
@@ -10,21 +10,21 @@
     }
 }
 @include g.breakpoint(tablet){
-    .c-card__body:has(.c-card__image--container) {
+    .p-card__body:has(.p-card__image--container) {
     display: flex;
     justify-content: center;
     }
 }
 
-.c-card__image--container{
+.p-card__image--container{
     position: relative;
 }
 @include g.breakpoint(tablet){
-    .c-card__body:has(.c-card__image--container) .c-card__image--container {
+    .p-card__body:has(.p-card__image--container) .p-card__image--container {
     width: 50%;
     }
 }
-.c-card__image{
+.p-card__image{
     aspect-ratio: 677 / 471;
     height: 100%;
     width: 100%;
@@ -32,7 +32,7 @@
     @include g.breakpoint(tablet){
     }
 }
-.c-card__text--body{
+.p-card__text--body{
     padding: 32px 17px 44px;
     @include g.breakpoint(tablet){
         width: 100%;
@@ -43,11 +43,11 @@
     }
 }
 @include g.breakpoint(tablet){
-    .c-card__body:has(.c-card__image--container) .c-card__text--body {
+    .p-card__body:has(.p-card__image--container) .p-card__text--body {
         width: 50%;
     }
 }
-.c-card__title{
+.p-card__title{
     font-size: 2.0rem;
     line-height: 1.485;
     margin-bottom: 20px;
@@ -57,7 +57,7 @@
         margin-bottom: 2.34vw;
     }
 }
-.c-card__subtitle{
+.p-card__subtitle{
     font-size: 1.6rem;
     line-height: 1.485;
     margin-bottom: 7px;
@@ -67,7 +67,7 @@
         margin-bottom: 0.67vw;
     }
 }
-.c-card__text{
+.p-card__text{
     font-size: 1.6rem;
     line-height: 1.485;
     margin-bottom: 40px;
@@ -80,11 +80,11 @@
         margin-bottom: 3.125vw;
     }
 }
-.c-card__link--container{
+.p-card__link--container{
     display: flex;
     justify-content: center;
 }
-.c-card__link{
+.p-card__link{
     width: 163px;
     height: 42px;
     display: flex;

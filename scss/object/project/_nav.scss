@@ -1,7 +1,7 @@
 @use "../../foundation/global" as g;
 
 
-.c-nav__bg-color{
+.p-nav__bg-color{
     background-color: g.$color--black;
     position: fixed;
     left: 0;
@@ -17,11 +17,11 @@
         display: none;
     }
 }
-.c-nav__bg-color.is-open{
+.p-nav__bg-color.is-open{
     opacity: 0.5;
     visibility: visible;
 }
-.c-nav__btn--close{
+.p-nav__btn--close{
     transition: all 0.5s;
     transition-timing-function: ease-in-out;
     opacity: 0;
@@ -29,7 +29,7 @@
         display: none;
     }
 }
-.c-nav__btn--close.is-open{
+.p-nav__btn--close.is-open{
     display: block;
     position: fixed;
     top: 8px;
@@ -65,7 +65,7 @@
         display: none;
     }
 }
-.c-nav__btn--close__text{
+.p-nav__btn--close__text{
     display: block;
     overflow: hidden;
     width: 1px;

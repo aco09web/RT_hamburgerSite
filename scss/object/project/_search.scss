@@ -1,9 +1,9 @@
 @use "../../foundation/global" as g;
 
-.c-search__label{
+.p-search__label{
     display: none;
 }
-.c-search--box{
+.p-search--box{
     width: 216px;
     height: 46px;
     border: solid 1px rgb(112, 112, 112);
@@ -48,7 +48,7 @@
         }
     }
 }
-.c-search--form{
+.p-search--form{
     display: flex;
     justify-content: center;
 }

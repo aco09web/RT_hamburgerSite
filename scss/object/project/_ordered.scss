@@ -1,5 +1,5 @@
 @use "../../foundation/global" as g;
-.c-unordered--container{
+.p-ordered--container{
     margin-bottom: 17px;
     @include g.breakpoint(tablet){
         margin-bottom: 60px;
@@ -8,7 +8,9 @@
         margin-bottom: 2.97vw;
     }
 }
-.c-unordered--primary{
+.p-ordered--primary{
+    list-style: decimal;
+    list-style-position: inside;
     color: g.$color--card-brown;
     @include g.breakpoint(tablet){
         padding: 0 50px;
@@ -17,7 +19,9 @@
         padding: 0 2.6vw;
     }
 }
-.c-unordered--secondary{
+.p-ordered--secondary{
+    list-style: decimal;
+    list-style-position: inside;
     margin: 17px;
     @include g.breakpoint(pc){
         margin: 0.89vw;

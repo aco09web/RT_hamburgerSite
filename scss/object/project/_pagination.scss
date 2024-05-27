@@ -1,6 +1,6 @@
 @use "../../foundation/global" as g;
 
-.c-pagination--sp{
+.p-pagination--sp{
     display: flex;
     justify-content: space-between;
     padding: 0 46px;
@@ -10,7 +10,7 @@
         display: none;
     }
 }
-.c-pagination__prev{
+.p-pagination__prev{
     position: relative;
     font-size: 1.6rem;
     line-height: 1.485;
@@ -39,7 +39,7 @@
         left: -23px;
     }
 }
-.c-pagination__next{
+.p-pagination__next{
     position: relative;
     font-size: 1.6rem;
     line-height: 1.485;
@@ -68,7 +68,7 @@
         right: -23px;
     }
 }
-.c-pagination--pc{
+.p-pagination--pc{
     display: none;
     @include g.breakpoint(tablet){
         display: flex;
@@ -83,16 +83,16 @@
         margin: 150px 0 64px;
     }
 }
-.c-pagination__link--current{
+.p-pagination__link--current{
     color: g.$color--white;
     background-color: g.$color--card-brown;
 }
-.c-pagination__list{
+.p-pagination__list{
     display: flex;
     margin: 0 54px;
     position: relative;
 }
-.c-pagination__list__link{
+.p-pagination__list__link{
     margin-left: 15px;
     width: 35px;
     height: 35px;
@@ -102,7 +102,7 @@
     justify-content: center;
 }
 
-.c-pagination__arrow-prev{
+.p-pagination__arrow-prev{
     position: relative;
     &::before{
         content: "";
@@ -129,7 +129,7 @@
         left: -39px;
     }
 }
-.c-pagination__arrow-next{
+.p-pagination__arrow-next{
     position: relative;
     &::before{
         content: "";

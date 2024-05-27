@@ -1,5 +1,5 @@
 @use "../../foundation/global" as g;
-.c-table{
+.p-table{
     width: 100%;
     color: g.$color--brown;
     margin-bottom: 60px;
@@ -9,10 +9,10 @@
         margin-bottom: 3.13vw;
     }
 }
-.c-table__row{
+.p-table__row{
     border: solid 1px g.$color--text-gray-primary;
 }
-.c-table__cell--left{
+.p-table__cell--left{
     width: 42%;
     padding: 29px 23px 24px;
     border: solid 1px rgb(112, 112, 112);
@@ -25,7 +25,7 @@
         padding: 1.51v 1.56vw 1.25vw;
     }
 }
-.c-table__cell--right{
+.p-table__cell--right{
     width: 58%;
     padding: 29px 23px 24px;
     @include g.breakpoint(tablet){
