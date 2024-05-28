@@ -32,7 +32,6 @@
     display: none;
     @include g.breakpoint(pc){
         display: block;
-        font-family: g.$font-title;
         font-size: 1.770vw;
         line-height: 2.022vw;
         margin-bottom: 4.687vw;

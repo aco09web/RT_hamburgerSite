@@ -68,15 +68,11 @@
     }
 }
 .p-card__text{
-    font-size: 1.6rem;
-    line-height: 1.485;
     margin-bottom: 40px;
     @include g.breakpoint(tablet){
         margin-bottom: 45px;
     }
     @include g.breakpoint(pc){
-        font-size: 0.83vw;
-        line-height: 1.23vw;
         margin-bottom: 3.125vw;
     }
 }
@@ -92,8 +88,6 @@
     justify-content: center;
     font-size: 1.6rem;
     line-height: 1.063;
-    color: g.$color--text-gray-primary;
-    background-color: g.$color--white;
     border-radius: 20px;
     padding-bottom: 1px;
     @include g.breakpoint(pc){

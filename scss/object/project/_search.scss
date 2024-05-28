@@ -9,6 +9,7 @@
     border: solid 1px rgb(112, 112, 112);
     border-radius: 10px;
     position: relative;
+    text-align: left;
     margin-right: 16px;
     @include g.breakpoint(tablet){
         width: 396px;
@@ -51,4 +52,23 @@
 .p-search--form{
     display: flex;
     justify-content: center;
+}
+.p-search--submit{
+    width: 90px;
+    height: 46px;
+    background: linear-gradient(to bottom, #f2ede9 0%, #ded8d3 100%);
+    border: 1px solid #707070;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    @include g.breakpoint(tablet){
+        width: 136px;
+    }
+    @include g.breakpoint(pc){
+    width: 7.083vw;
+    height: 2.395vw;
+    font-size: 0.833vw;
+    }
 }

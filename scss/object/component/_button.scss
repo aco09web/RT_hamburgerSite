@@ -1,41 +1,6 @@
 @use "../../foundation/global" as g;
-.c-button--menu{
-    display: block;
-    font-family: g.$font-title;
-    font-size: 2.0rem;
-    line-height: 1.172;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    @include g.breakpoint(tablet){
-        font-size: 3.4rem;
-        line-height: 1.172;
-        top: 20px;
-        right: 25px;
-    }
-    @include g.breakpoint(pc){
-        display: none;
-    }
-}
-.c-button--submit__text{
-    width: 90px;
-    height: 46px;
-    background: linear-gradient(to bottom, #f2ede9 0%, #ded8d3 100%);
-    border: 1px solid #707070;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6rem;
-    @include g.breakpoint(tablet){
-        width: 136px;
-    }
-    @include g.breakpoint(pc){
-    width: 7.083vw;
-    height: 2.395vw;
-    font-size: 0.833vw;
-    }
-}
+
+
 .c-button--primary{
     width: 100%;
     border: solid 1px g.$color--text-gray-primary;
@@ -55,4 +20,5 @@
         height: 5.42vw;
     }
 }
+
 

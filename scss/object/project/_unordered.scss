@@ -1,13 +1,4 @@
 @use "../../foundation/global" as g;
-.p-unordered--container{
-    margin-bottom: 17px;
-    @include g.breakpoint(tablet){
-        margin-bottom: 60px;
-    }
-    @include g.breakpoint(pc){
-        margin-bottom: 2.97vw;
-    }
-}
 .p-unordered--primary{
     color: g.$color--card-brown;
     @include g.breakpoint(tablet){

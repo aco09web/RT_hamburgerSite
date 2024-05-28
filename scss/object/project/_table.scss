@@ -1,13 +1,8 @@
 @use "../../foundation/global" as g;
 .p-table{
     width: 100%;
-    color: g.$color--brown;
-    margin-bottom: 60px;
     border-collapse: collapse;
     table-layout:fixed;
-    @include g.breakpoint(pc){
-        margin-bottom: 3.13vw;
-    }
 }
 .p-table__row{
     border: solid 1px g.$color--text-gray-primary;

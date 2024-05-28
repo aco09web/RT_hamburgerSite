@@ -1,6 +1,6 @@
 @use "../../foundation/global" as g;
 
-.c-section--container{
+.c-section--container--primary{
     padding: 0 20px;
     @include g.breakpoint(tablet){
         padding: 0 40px;
@@ -9,8 +9,16 @@
         padding: 0 5.20vw;
     }
 }
+.c-section--container--secondary{
+    padding: 0 20px;
+    @include g.breakpoint(tablet){
+        padding: 0 60px;
+    }
+    @include g.breakpoint(pc){
+        padding: 0 5.20vw;
+    }
+}
 .c-section__heading2{
-    color: g.$color--brown;
     font-size: 2.8rem;
     line-height: 1.485;
     margin-bottom: 25px;
@@ -25,7 +33,6 @@
     }
 }
 .c-section__heading3{
-    color: g.$color--brown;
     font-size: 2.4rem;
     line-height: 1.485;
     margin-bottom: 25px;
@@ -40,7 +47,6 @@
     }
 }
 .c-section__heading4{
-    color: g.$color--brown;
     font-size: 2.0rem;
     line-height: 1.485;
     margin-bottom: 34px;
@@ -54,7 +60,6 @@
     }
 }
 .c-section__heading5{
-    color: g.$color--brown;
     font-size: 2.0rem;
     line-height: 1.485;
     margin-bottom: 27px;
@@ -68,7 +73,6 @@
     }
 }
 .c-section__heading6{
-    color: g.$color--brown;
     font-size: 2.0rem;
     line-height: 1.485;
     margin-bottom: 26px;
@@ -82,16 +86,11 @@
     }
 }
 .c-section__text{
-    line-height: 24px;
     margin-bottom: 20px;
     @include g.breakpoint(tablet){
-        font-size: 1.6rem;
-        line-height: 23.76px;
         margin-bottom: 37px;
     }
     @include g.breakpoint(pc){
-        font-size: 0.83vw;
-        line-height: 1.23vw;
         margin-bottom: 3.64vw;
     }
 }

@@ -43,19 +43,6 @@
         font-size: 3.125vw;
     }
 }
-.p-single__title--text{
-    font-family: g.$font-main;
-    padding: 12px 0 0 12px;
-    font-size: 1.6rem;
-    line-height: 1.485;
-    @include g.breakpoint(tablet){
-        padding: 8px 0 0 19px;
-    }
-    @include g.breakpoint(pc){
-        padding: 0.677vw 0.989vw 0;
-        font-size: 0.833vw;
-    }
-}
 .p-single{
     padding: 0 20px;
     margin-bottom: 60px;
@@ -70,22 +57,6 @@
 }
 .p-single__img--full{
     width: 100%;
-    margin-bottom: 30px;
-    @include g.breakpoint(tablet){
-        margin-bottom: 60px;
-    }
-    @include g.breakpoint(pc){
-        margin-bottom: 3.13vw;
-    }
-}
-.p-single__col{
-    margin-bottom: 30px;
-    @include g.breakpoint(tablet){
-        margin-bottom: 60px;
-    }
-    @include g.breakpoint(pc){
-        margin-bottom: 3.13vw;
-    }
 }
 .p-single__col__img{
     width: calc(50% - 5px);
@@ -98,20 +69,13 @@
 }
 .p-single__col__text{
     width: calc(50% - 5px);
-    font-size: 1.6rem;
-    line-height: 1.485;
     @include g.breakpoint(tablet){
         width: calc(50% - 10px);
     }
     @include g.breakpoint(pc){
         width: calc(50% - 1.04vw);
-        font-size: 0.83vw;
     }
 }
 .p-single__img--center{
     text-align: center;
-    margin-bottom: 30px;
-    @include g.breakpoint(pc){
-        margin-bottom: 3.13vw;
-    }
 }

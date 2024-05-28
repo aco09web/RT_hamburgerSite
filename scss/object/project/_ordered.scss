@@ -1,13 +1,4 @@
 @use "../../foundation/global" as g;
-.p-ordered--container{
-    margin-bottom: 17px;
-    @include g.breakpoint(tablet){
-        margin-bottom: 60px;
-    }
-    @include g.breakpoint(pc){
-        margin-bottom: 2.97vw;
-    }
-}
 .p-ordered--primary{
     list-style: decimal;
     list-style-position: inside;

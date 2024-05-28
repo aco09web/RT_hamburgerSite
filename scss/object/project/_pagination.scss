@@ -12,8 +12,6 @@
 }
 .p-pagination__prev{
     position: relative;
-    font-size: 1.6rem;
-    line-height: 1.485;
     &::before{
         content: "";
         display: inline-block;
@@ -41,8 +39,6 @@
 }
 .p-pagination__next{
     position: relative;
-    font-size: 1.6rem;
-    line-height: 1.485;
     &::before{
         content: "";
         display: inline-block;
@@ -96,7 +92,7 @@
     margin-left: 15px;
     width: 35px;
     height: 35px;
-    border: solid 1px g.$color--text-gray-primary;
+    border: solid 1px g.$color--gray;
     display: flex;
     align-items: center;
     justify-content: center;

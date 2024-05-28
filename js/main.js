@@ -1,5 +1,5 @@
 const content = document.querySelector(".p-menu");
-const btn = document.querySelector(".c-button--menu");
+const btn = document.querySelector(".p-header__button--menu");
 const blackBg = document.querySelector('.p-nav__bg-color');
 const closeBtn = document.querySelector('.p-nav__btn--close');
 
